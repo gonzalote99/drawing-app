@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <title>drawing app</title>
+</head>
+<body>
+  <div id="app">
+    <div class="actions">
+     
+     <button id="newBoardBtn" class="actionBtn" title="New Board"><i class="fa fa-plus"></i>new board</button>
+     
+    </div>
+
+    <div class="center">
+     <div class="menu">
+    <button id="closeMenuBtn" title="Close Menu"> <i class="fa fa-times-circle-o fa-2x"></i></button>
+    <div class="penSize" title="Pen Size">
+      <input type="number" id="penSize" value="3">
+    </div>
+   <div class="eraserSize" title="Eraser Size">
+    <input type="number" id="eraserSize" value="6">
+   </div>
+   <input type="color" id="penColor" value="#000000" title="Pen Color">
+
+   
+     <input type="color" id="bgColor" value="#ffffff" title="Background Color">
+ 
+
+     <div class="text" title="Text">
+        <i class="fa fa-font" ></i>
+ 
+     </div>
+     <div class="shareScreenBtn">
+      <i class="fa fa-video-camera"></i>
+
+     </div>
+
+     </div>
+     <div class="board">
+     <div class="minimizeScreen" >
+      <i class="fa fa-compress fa-2x"></i>
+
+     </div>
+ 
+    </div>
+
+    </div>
+  </div>
+
+  <div class="filesDrawer" title="All Files">
+     <button id="closeFilesBtn" class="actionBtn" title="Close">X</button>
+  </div>
+  <div id="context-menu">
+  <div class="item">
+  <h5 id="openBtnCM" class="CMBtn" >open</h5>
+  </div>
+  
+  </div>
+  </div>
+  <div class="videoPlayer">
+ <button id="closeVideoPlayer" class="actionBtn">x</button>
+  <video id="videoPlayer" autoplay></video>
+  </div>
+<footer>
+ <div class="statusBar">
+ <p id="status"></p>
+
+ </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
